@@ -1,15 +1,17 @@
 # STI_Elastance_AIEstimator
 ### AI-Based Estimation of End-Systolic Elastance From Arm-Pressure and Systolic Time Intervals
 
+This repository contains Python scripts including different machine learning models to derive end-systolic elastance (Ees) from non-invasive blood pressure and systolic timing intervals data.
+
 **Abstract**
 
-Left ventricular end-systolic elastance (Ees) is a crucial factor in evaluating cardiac systolic function and ventricular-arterial interaction. Previous methods for Ees estimation often rely on the echocardiographic ejection fraction (EF), which requires additional measurements of end-diastolic volume (EDV) for accurate interpretation. This study introduces an innovative artificial intelligence-based approach to estimate Ees using clinically relevant systolic time intervals, specifically the pre-ejection period (PEP) and ejection time (ET).
+Left ventricular end-systolic elastance (Ees) is a major determinant of cardiac systolic function and ventricular-arterial interaction. Previous methods for the Ees estimation require the use of the echocardiographic ejection fraction (EF). However, given that EF expresses the stroke volume as a fraction of end-diastolic volume (EDV), accurate interpretation of EF is attainable only with the additional measurement of EDV. Hence, there is still need for a simple, reliable, noninvasive method to estimate Ees. This study proposes a novel artificial intelligence - based approach to estimate Ees using the information embedded in clinically relevant systolic time intervals, namely the pre-ejection period (PEP) and ejection time (ET). We developed a training/testing scheme using virtual subjects (n=4645) from a previously validated in-silico model. Extreme Gradient Boosting regressor was employed to model Ees using as inputs arm cuff pressure, PEP, and ET. Results showed that Ees can be predicted with high accuracy achieving a normalized RMSE equal to 9.15 % (r = 0.92) for a wide range of Ees values from 1.2 to 4.5 mmHg/mL. The proposed model was found to be less sensitive to measurement errors (±10% to 30% of the actual value) in blood pressure, presenting low test errors for the different levels of noise (RMSE did not exceed 0.32 mmHg/mL). In contrast, high sensitivity was reported for measurement errors in the systolic timing features. It was demonstrated that Ees can be reliably estimated from the traditional arm pressure and echocardiographic PEP and ET. This approach constitutes a step towards the development of an easy and clinically applicable method for assessing left ventricular systolic function.
 
-We devised a training/testing scheme using virtual subjects (n=4,645) from a previously validated in-silico model. An Extreme Gradient Boosting regressor was employed to model Ees using arm cuff pressure, PEP, and ET as inputs. Results demonstrate high accuracy in predicting Ees, achieving a normalized RMSE of 9.15% (r=0.92) across a broad range of Ees values (1.2 to 4.5 mmHg/ml). The model exhibits robustness against measurement errors (±10–30% of actual value) in blood pressure, yielding low test errors even with varying levels of noise (RMSE ≤ 0.32 mmHg/ml).
+<img width="1040" alt="Screenshot at Oct 19 18-07-16" src="https://github.com/Vicbi/STI_Elastance_AIEstimator/assets/10075123/97a25de1-e291-45b3-8282-1302fd7c70bc">
 
-However, the model displays high sensitivity to measurement errors in systolic timing features. This study establishes that Ees can be reliably estimated using traditional arm-pressure and echocardiographic PEP and ET measurements. This approach marks a significant step towards developing an easily applicable method for assessing left ventricular systolic function.
 
 **Original Publication**
+
 For a comprehensive understanding of the methodology and background, please refer to the original publication: Bikia, V., Adamopoulos, D., Pagoulatou, S., Rovas, G., & Stergiopulos, N. (2021). AI-based estimation of end-systolic elastance from arm-pressure and systolic time intervals. Frontiers in Artificial Intelligence, 4, 579541.
 
 **Citation**
@@ -21,3 +23,8 @@ Bikia, V., Adamopoulos, D., Pagoulatou, S., Rovas, G., & Stergiopulos, N. (2021)
 **License**
 
 This project is licensed under the Apache License 2.0 - see the LICENSE.md file for details.
+
+This work was developed as part of a research project undertaken by the Laboratory of Hemodynamics and Cardiovascular Technology at EPFL (https://www.epfl.ch/labs/lhtc/).
+
+Feel free to reach out at vickybikia@gmail.com if you have any questions or need further assistance!
+
