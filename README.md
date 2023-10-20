@@ -18,7 +18,7 @@ For a comprehensive understanding of the methodology and background, please refe
 
 If you use this code in your research, please cite the original publication:
 
-Bikia, V., Adamopoulos, D., Pagoulatou, S., Rovas, G., & Stergiopulos, N. (2021). AI-based estimation of end-systolic elastance from arm-pressure and systolic time intervals. Frontiers in Artificial Intelligence, 4, 579541.
+Bikia, V., Adamopoulos, D., Pagoulatou, S., Rovas, G., & Stergiopulos, N. (2021). AI-based estimation of end-systolic elastance from arm-pressure and systolic time intervals. Frontiers in Artificial Intelligence, 4, 579541. https://doi.org/10.3389/frai.2021.579541
 
 **License**
 
